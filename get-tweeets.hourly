@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cd /root/tweet-logger
+python get_tweets.py
