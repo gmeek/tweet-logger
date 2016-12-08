@@ -1,0 +1,14 @@
+#!/usr/bin/python
+
+"""JSON Parser for JSONP tweets on stdin"""
+
+import sys
+import json
+
+def tweet_generator():
+    for line in sys.stdin:
+        yield json.loads(line)
+
+for tweet in tweet_generator():
+    print tweet
+
